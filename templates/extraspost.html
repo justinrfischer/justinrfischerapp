@@ -1,0 +1,16 @@
+
+		
+
+		{% for extrasEntry in extrasEntries %}
+			<div class="col-md-3 panel panel-default" id="divPanelExtras" >
+			  <a href="{{links.id}}" id="extrasAnchor" >
+	          <div class="panel-heading" id="divTrans75"><h2>{{extrasEntry.subject}}</h2></div>
+		          <div class="panel-body">
+		          	<img src="img/{{extrasEntry.titleImageUrl}}">
+	    	        
+	              </div>
+	              <div class="post-date">{{extrasEntry.created}}</div>
+	          </a>
+	          </div>
+	        <div class="col-md-1"></div>
+		{% endfor %}
